@@ -71,3 +71,12 @@ export default defineConfig([
   },
 ])
 ```
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+paso a paso del ejercicio:
+
+Primero creamos todos los componentes según lo que creemos que vamos a necesitar. 
+La logica que vamos a usar: (https://www.figma.com/es-es/comunidad/file/1235135369163092252/instagram-web-ui-recreated) En base a este diseño vamos a hacer que cuando se haga click en una publicacion se abra una ventana con la informacion más detallada como es realmente instagram. Tambien cuando haga click en el unico button funcional del header (Profile) ademas de el logo y home, lo va a llevar a la otra pagina usando routes.
+
