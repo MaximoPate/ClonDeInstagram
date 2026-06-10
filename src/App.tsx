@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Index";
+import Feed from "./components/Feed/Index";
+import Profile from "./components/Profile/Index";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+    <div className="app">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Feed />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </div>
+  );
+};
 
-export default App
+export default App;
