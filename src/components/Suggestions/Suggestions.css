@@ -1,0 +1,106 @@
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 80px; /* Se queda fija al hacer scroll */
+}
+
+.suggestions-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.suggestions-user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.suggestions-user-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.suggestions-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.suggestions-bio {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.suggestions-switch {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestions-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.suggestions-see-all {
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #262626;
+  cursor: pointer;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.suggestion-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.suggestion-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.suggestion-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.suggestion-motivo {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.suggestion-follow {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}

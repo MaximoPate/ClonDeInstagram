@@ -1,0 +1,52 @@
+.carrousel-historias {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  overflow-x: auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  background: white;
+  margin-bottom: 24px;
+  /* Ocultamos la scrollbar pero mantenemos el scroll */
+  scrollbar-width: none;
+}
+
+.carrousel-historias::-webkit-scrollbar {
+  display: none;
+}
+
+.historia-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.historia-anillo {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.historia-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.historia-username {
+  font-size: 12px;
+  color: #262626;
+  max-width: 66px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}

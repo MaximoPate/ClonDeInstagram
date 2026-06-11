@@ -1,0 +1,24 @@
+.profile-feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin-top: 24px;
+}
+
+.profile-feed-item {
+  aspect-ratio: 1; 
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-feed-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Efecto hover oscurece la imagen como en Instagram */
+  transition: filter 0.2s;
+}
+
+.profile-feed-item:hover .profile-feed-imagen {
+  filter: brightness(0.7);
+}

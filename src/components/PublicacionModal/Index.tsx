@@ -1,20 +1,21 @@
-import type { Publicacion, Comentario } from "../../types/Index";
-import "./PublicacionModal.css";
 import { comentariosFijos } from "../../data/comentariosFijos";
+import type { Publicacion } from "../../types/Index";
+import { X } from "lucide-react";
+import "./PublicacionModal.css";
 
 type Props = {
   publicacion: Publicacion;
-  onCerrar: () => void;
+  onClose: () => void; 
 };
 
-const PublicacionModal = ({ publicacion, onCerrar }: Props) => {
+const PublicacionModal = ({ publicacion, onClose }: Props) => {
   return (
-    <div className="modal-overlay" onClick={onCerrar}>
-
-      {/* stopPropagation evita que el click dentro del modal lo cierre también */}
+    <div className="modal-overlay" onClick={onClose}>
       <div className="modal-contenido" onClick={(e) => e.stopPropagation()}>
 
-        <button className="modal-cerrar" onClick={onCerrar}>✕</button>
+        <button className="modal-cerrar" onClick={onClose}>
+          <X size={18} />
+        </button>
 
         <img src={publicacion.imagenes[0]} alt="publicacion" className="modal-imagen" />
 
