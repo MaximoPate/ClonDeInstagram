@@ -1,0 +1,83 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 245px;
+  padding: 8px 12px 20px;
+  background: #fff;
+  border-right: 1px solid var(--ig-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 25px 12px 18px;
+  color: var(--ig-text);
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--ig-text);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.header-nav-item:hover {
+  background: #f2f2f2;
+}
+
+.header-nav-item.active {
+  font-weight: 700;
+}
+
+.header-nav-item img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-more {
+  margin-top: auto;
+}
+
+/* Colapsa a solo íconos en pantallas chicas */
+@media (max-width: 768px) {
+  .header {
+    width: 72px;
+    align-items: center;
+    padding: 8px 4px 20px;
+  }
+
+  .header-logo {
+    font-size: 0;
+    padding: 25px 0 18px;
+  }
+
+  .header-nav-item {
+    justify-content: center;
+  }
+
+  .header-nav-item span {
+    display: none;
+  }
+}

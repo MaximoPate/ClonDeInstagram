@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ig-border: #dbdbdb;
+  --ig-bg: #fafafa;
+  --ig-text: #262626;
+  --ig-text-light: #8e8e8e;
+  --ig-blue: #0095f6;
+  --ig-red: #ed4956;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: var(--ig-text);
+}
+
+body {
+  background-color: var(--ig-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+}

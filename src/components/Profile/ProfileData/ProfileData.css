@@ -1,0 +1,87 @@
+.profile-data {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 0 20px 40px;
+  border-bottom: 1px solid var(--ig-border);
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-username {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.profile-btn {
+  padding: 8px 16px;
+  background: #efefef;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ig-text);
+  cursor: pointer;
+}
+
+.profile-btn:hover {
+  background: #dbdbdb;
+}
+
+.profile-config {
+  display: flex;
+  padding: 4px;
+  background: none;
+  border: none;
+  color: var(--ig-text);
+  cursor: pointer;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+}
+
+.profile-bio {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 736px) {
+  .profile-data {
+    gap: 28px;
+  }
+
+  .profile-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-top {
+    flex-wrap: wrap;
+  }
+
+  .profile-stats {
+    gap: 24px;
+    font-size: 14px;
+  }
+}

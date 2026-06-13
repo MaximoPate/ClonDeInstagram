@@ -1,12 +1,9 @@
 .carrousel-historias {
   display: flex;
   gap: 16px;
-  padding: 16px;
+  padding: 8px 4px 16px;
   overflow-x: auto;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  background: white;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   /* Ocultamos la scrollbar pero mantenemos el scroll */
   scrollbar-width: none;
 }

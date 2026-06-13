@@ -1,0 +1,60 @@
+.post {
+  background: #fff;
+  border: 1px solid var(--ig-border);
+  border-radius: 8px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+}
+
+.post-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ig-text);
+}
+
+.post-imagen {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+  border-top: 1px solid var(--ig-border);
+  border-bottom: 1px solid var(--ig-border);
+}
+
+.post-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 14px 14px;
+}
+
+.like-btn {
+  display: flex;
+  width: fit-content;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--ig-text);
+  cursor: pointer;
+}
+
+.post-footer p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.post-footer p:first-of-type {
+  font-weight: 600;
+}

@@ -37,5 +37,3 @@ const Suggestions = () => {
 };
 
 export default Suggestions;
-
-//ESTO FALTA QUE APAREZCA EN LA PRIMER PAGINA JUNTO AL FEED SEGUN EL DISEÑO DEL FIGMA

@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Todo lo que no es el sidebar (que está fijo a la izquierda) */
+.main-content {
+  flex: 1;
+  margin-left: 245px;
+}
+
+/* Home: columna central (historias + feed) + sugerencias a la derecha */
+.home {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 24px;
+}
+
+.home-feed {
+  width: 100%;
+  max-width: 500px;
+}
+
+.home-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  padding-top: 16px;
+}
+
+/* En pantallas chicas el sidebar de sugerencias se oculta */
+@media (max-width: 1000px) {
+  .home-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 72px;
+  }
+}
